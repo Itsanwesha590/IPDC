@@ -1,0 +1,1160 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis-Black.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+    font-weight: 900;
+}
+h2{
+    font-weight: 700;
+}
+p{
+    font-weight: 200;
+}
+
+:root {
+  --primary-color: #ed017f;
+  --secondary-color: #676767;
+  --tertiary-color: #343434;
+  --quaternary-color: #999999;
+}
+
+body {
+  font-family: "Metropolis", sans-serif;
+}
+
+body,
+html {
+  overflow-x: hidden !important;
+}
+
+.container {
+  max-width: 1396px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-2 {
+  width: calc(8.33% * 2);
+  padding: 0 15px;
+}
+
+.col-4 {
+  width: calc(8.33% * 4);
+  padding: 0 15px;
+}
+
+.col-3 {
+  width: calc(8.33% * 3);
+  padding: 0 15px;
+}
+
+.col-8 {
+  width: calc(8.33% * 8);
+  padding: 0 15px;
+}
+
+.col-20 {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.col-25 {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.col-50 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.col-33 {
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+/* 
+===================
+Navbar Section
+===================
+*/
+
+.hdr-sec {
+  padding: 15px 0;
+}
+
+.nav-logo > a {
+  width: 175px;
+}
+
+.nav-logo > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+nav,
+.navbar-collapsed,
+.navbar-collapsed > ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-collapsed > ul {
+  margin: 0 auto;
+}
+
+.nav-links:hover {
+  color: var(--primary-color);
+}
+
+.navbar-collapsed {
+  flex-grow: 1;
+}
+
+.nav-items {
+  margin-right: 41.6px;
+}
+
+.search-logo {
+  margin-right: 20px;
+}
+
+.nav-links {
+  color: black;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.nav-btn {
+  margin-left: 27px;
+}
+
+.navbar-toggler,
+.menu {
+  display: none;
+}
+
+.primary-btn {
+  padding: 18px 30px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background-color: #f152a7;
+  cursor: pointer;
+}
+
+/* 
+==================
+Loan Section
+==================
+*/
+
+.loan-sec {
+  min-height: 654px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* margin-top: 108px; */
+}
+
+.loan {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.title1 {
+  max-width: 435px;
+  font-size: 57px;
+  line-height: calc(68 / 57);
+  font-weight: 800;
+}
+
+
+
+.loan-content > p {
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: var(--secondary-color);
+  margin: 23px 0 42px;
+  max-width: 391.74px;
+}
+
+.apply-btn {
+  display: flex;
+}
+
+.secondary-btn {
+  font-size: 12px;
+  padding: 13px 22.5px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: white;
+  margin-right: 20px;
+}
+
+.secondary-btn:hover {
+  background-color: #f152a7;
+  cursor: pointer;
+}
+
+.calculator-btn {
+  font-size: 12px;
+  padding: 13px 20px;
+  border-radius: 4px;
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.calculator-btn:hover {
+  background-color: #ed017f;
+  color: white;
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.phone {
+  margin-top: 51px;
+}
+
+.phone > a {
+  display: flex;
+  align-items: center;
+}
+
+.phone > a > img {
+  width: 24px;
+}
+
+.phone > .call-logo > span {
+  color: black;
+  margin: 0 5px;
+}
+
+.call-logo {
+  position: relative;
+  display: inline-block;
+  transition: all linear 0.2s;
+}
+
+.social-links .call-logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 1px;
+  height: 100%;
+  background-color: #cccccc;
+}
+
+.call-logo:hover {
+  transform: scale(1.2);
+}
+
+.social-media > ul {
+  display: flex;
+  align-items: center;
+  margin: 51px 0 0 39.19px;
+}
+
+.social-media > ul > a {
+  display: inline-block;
+  transition: all linear 0.2s;
+}
+
+.media-logo > a:hover {
+  transform: scale(1.4);
+}
+
+.media-logo {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+.family-pic {
+  max-width: 932.96px;
+  position: relative;
+}
+
+.family-pic > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.car-loan {
+  padding: 19.5px 25.92px;
+  position: absolute;
+  top: 25px;
+  left: 105px;
+  border: none;
+  box-shadow: 0px 0px 60px lightgray;
+  border-radius: 55px;
+}
+
+.car-loan:hover {
+  box-shadow: 0px 0px 20px lightgray;
+  cursor: pointer;
+}
+
+.car-loan > a {
+  display: flex;
+  align-items: center;
+}
+
+.car-loan > a > img {
+  width: 30.65px;
+  margin-right: 20px;
+}
+
+.car-loan > a > span {
+  margin: 0 4.32px;
+  font-weight: 600;
+  color: black;
+}
+
+.home-loan {
+  padding: 19.5px 25.92px;
+  position: absolute;
+  top: 130px;
+  right: 70px;
+  border: none;
+  box-shadow: 0px 0px 60px lightgray;
+  border-radius: 55px;
+}
+
+.home-loan:hover {
+  box-shadow: 0px 0px 20px lightgray;
+  cursor: pointer;
+}
+
+.home-loan > a {
+  display: flex;
+  align-items: center;
+}
+
+.home-loan > a > img {
+  width: 30.65px;
+  margin-right: 20px;
+}
+
+.home-loan > a > span {
+  margin: 0 4.32px;
+  font-weight: 600;
+  color: black;
+}
+
+/* 
+============================
+Customer Experience Section
+============================
+*/
+
+.customer-sec {
+  padding: 50px 0;
+}
+
+.customer-heading {
+  text-align: center;
+}
+
+.customer-heading > p {
+  max-width: 622.42px;
+  margin: 15px auto;
+  font-family: "Metropolis";
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--quaternary-color);
+}
+
+.title2 {
+  color: var(--tertiary-color);
+  font-size: 36px;
+}
+
+.card-row {
+  justify-content: center;
+}
+
+.card {
+  max-width: 259px;
+  margin: 30px 50px;
+  transition: all linear 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.card-desc > h4 {
+  color: var(--tertiary-color);
+}
+
+.card-desc > p {
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: calc(24 / 14);
+  max-width: 160px;
+  font-size: 14px;
+  color: var(--quaternary-color);
+}
+
+.card-img > img {
+  margin-right: auto;
+}
+
+/* 
+=========================
+Our Service Section
+=========================
+*/
+
+.service-sec {
+  padding: 40px 0;
+  background-color: #fef9fc;
+}
+
+.service-hdr {
+  text-align: center;
+}
+
+.title3 {
+  color: var(--tertiary-color);
+  font-size: 36px;
+}
+
+.service-hdr > p {
+  max-width: 791.88px;
+  margin: 15px auto;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: var(--quaternary-color);
+}
+
+.pic-row {
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.pic-card {
+  max-width: 254px;
+  min-height: 400px;
+  margin: 0 auto;
+}
+
+
+
+.pic-card > a {
+  min-height: 365px;
+}
+
+.pic-card > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all linear 0.2s;
+}
+
+.pic-card > a > img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.pic-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.pic-desc > p {
+  max-width: 195px;
+  color: var(--tertiary-color);
+  margin-right: auto;
+}
+
+.pic-desc > img {
+  width: 30.83px;
+  height: 30.83px;
+  margin-left: auto;
+  transition: linear 0.2s all;
+}
+
+.pic-desc > img:hover {
+  transform: scale(1.4);
+}
+
+/* 
+===================
+Result Section
+===================
+*/
+
+.result-sec {
+  min-height: 648px;
+  padding: 44px 0;
+}
+
+.result-hdr {
+  text-align: center;
+}
+
+.title4 {
+  margin: 18.84px auto;
+  color: var(--tertiary-color);
+  font-size: 36px;
+}
+
+.result-hdr > p {
+  max-width: 520.6px;
+  margin: 0 auto 66px;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: var(--quaternary-color);
+}
+
+.folio-card {
+  max-width: 172px;
+  margin: 0 auto 55px;
+}
+
+.folio-card:hover {
+  cursor: pointer;
+}
+
+.title5 {
+  font-size: 40px;
+  color: var(--tertiary-color);
+  margin-bottom: 8px;
+}
+
+.folio-card > p {
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+.first-card > .title5 {
+  color: var(--primary-color);
+}
+
+.title5 > span {
+  font-size: 27px;
+}
+
+/* 
+===================
+Footer Section
+===================
+*/
+
+.footer-sec {
+  padding: 30px 0;
+  font-family:url("./fonts/Metropolis-Medium.otf");
+  font-weight: 200;
+}
+
+.social-icon-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.media-links {
+  width: 24px;
+  height: 24px;
+}
+
+.media-links > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-hdr {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-links > p {
+  max-width: 180px;
+  font-size: 14px;
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+
+.social-icon-list > li > a {
+  margin-right: auto;
+  transition: all linear 0.3s;
+}
+
+.social-icon-list > li > a:hover {
+  transform: scale(1.4);
+}
+
+.products,
+.getstarted,
+.about {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--tertiary-color);
+}
+
+.footer-list > li > a {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.footer-links {
+  margin: 0 30px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  /* Navbar Section */
+
+  .nav-items {
+    margin-right: 26px;
+  }
+
+  /* Loan Section */
+
+  .col-4,
+  .col-8 {
+    width: 100%;
+  }
+
+  .loan-row {
+    flex-wrap: wrap-reverse;
+  }
+
+  .secondary-btn,
+  .calculator-btn {
+    padding: 10px 14px;
+  }
+
+  .car-loan,
+  .home-loan {
+    padding: 10.5px 14.92px;
+  }
+
+  .car-loan > a > img,
+  .home-loan > a > img {
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .car-loan {
+    left: 112px;
+  }
+
+  .home-loan {
+    right: 96px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Navbar Section */
+
+  .navbar-collapsed {
+    display: none;
+  }
+
+  .menu {
+    display: flex !important;
+    align-items: center;
+    margin-left: auto !important;
+    margin-right: 20px;
+  }
+
+  .nav-btn {
+    margin: 0 !important;
+  }
+
+  .primary-btn {
+    padding: 9px 17px;
+    font-size: 11px;
+  }
+
+  .search-logo > a > img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .hdr-sec {
+    position: relative;
+  }
+
+  #nav-check:checked ~ .navbar-collapsed {
+    display: block;
+    position: absolute;
+    top: 95.84px;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+    height: 50vh;
+    z-index: 888888;
+    background-color:var(--primary-color);
+  }
+
+  .navbar-collapsed > ul {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .navbar-collapsed .search-logo,
+  .navbar-collapsed .nav-btn {
+    display: none;
+  }
+
+  .search-logo {
+    text-align: center;
+    margin-left: auto !important;
+  }
+
+  .nav-items {
+    margin: 0 0 20px !important;
+  }
+
+  /* Loan section */
+
+  .col-4,
+  .col-8 {
+    width: 100%;
+  }
+
+  .loan-row {
+    flex-wrap: wrap-reverse;
+  }
+
+  .family-pic {
+    margin: 0 auto;
+  }
+
+  .home-loan {
+    display: flex;
+    justify-content: center;
+    max-width: 148px;
+    padding: 15px;
+    top: 143px;
+    right: 87px;
+  }
+
+  .car-loan {
+    display: flex;
+    justify-content: center;
+    max-width: 148px;
+    padding: 15px;
+    top: 27px;
+    left: 132px;
+  }
+
+  .car-loan > a > img,
+  .home-loan > a > img {
+    height: 24.65px;
+    width: 24.65px;
+    margin-right: 5px;
+  }
+
+  .car-loan > a > span,
+  .home-loan > a > span {
+    font-size: 14px;
+  }
+
+  .loan-content {
+    padding-top: 15px;
+  }
+
+  .title1 {
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .loan-content p {
+    text-align: center;
+    margin: 30px auto !important;
+  }
+
+  .apply-btn,
+  .social-links {
+    justify-content: center;
+  }
+
+  /* customer experience section */
+
+  .customer-heading {
+    text-align: center;
+  }
+
+  .title2 {
+    font-size: 30px;
+  }
+
+  .customer-heading > p {
+    font-size: 10px;
+  }
+
+  .card {
+    margin: 20px auto;
+  }
+
+  /* Service section */
+
+  .col-3 {
+    width: 50%;
+  }
+
+  /* Footer Section */
+
+  .footer-sec .col-20 {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Navbar section */
+
+  .nav-logo > a {
+    width: 160px;
+  }
+
+  .navbar-toggler {
+    margin: 0 20px !important;
+  }
+
+  .nav-btn {
+    margin-left: 24px;
+  }
+
+  .menu {
+    margin-right: 0 !important;
+  }
+
+  /* Loan section */
+
+  .col-8,
+  .col-4 {
+    width: 100%;
+  }
+
+  .title1 {
+    font-size: 42px !important;
+  }
+
+  .family-pic {
+    left: 29px;
+  }
+
+  .family-pic > img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+  }
+
+  .home-loan {
+    padding: 10px;
+    top: 85px;
+    right: 97px;
+  }
+
+  .car-loan {
+    top: 18px;
+    left: 22px;
+    padding: 10px;
+  }
+
+  /* Customer Experience Section */
+
+  .customer-sec {
+    padding: 65px 0;
+  }
+
+  .customer-heading {
+    max-width: 650px;
+    margin: 0 auto !important;
+  }
+
+  .card-row .col-3 {
+    width: 27%;
+  }
+
+  /* Service section */
+
+  .service-hdr {
+    max-width: 650px;
+    margin: 0 auto !important;
+  }
+
+  .service-hdr > p {
+    max-width: 750px;
+    font-size: 14px;
+  }
+
+  .pic-card {
+    max-width: 208px;
+  }
+
+  .pic-desc {
+    margin-top: -47px;
+  }
+
+  .col-3 {
+    width: 40%;
+  }
+
+  /* Result Section */
+
+  .result-hdr {
+    max-width: 603px;
+    margin: 0 auto !important;
+  }
+
+  .result-hdr > p {
+    margin: 20px 40px 91px;
+  }
+
+  .result-row .col-3 {
+    width: 33%;
+  }
+
+  /* Footer section */
+
+  .col-20 {
+    width: 50%;
+  }
+
+  .footer-links {
+    margin: 20px;
+  }
+
+  .footer-row {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Navbar section */
+
+  .nav-logo > a {
+    width: 145px;
+  }
+
+  .navbar-toggler {
+    margin: 0 auto;
+  }
+
+  
+  /* Loan section */
+
+  .family-pic > img {
+    height: 70%;
+    width: 70%;
+    object-fit: cover;
+  }
+
+  .car-loan {
+    top: 10px;
+    left: 4px;
+    padding: 10px 10px;
+  }
+
+  .home-loan {
+    top: 52px;
+    right: 117px;
+    padding: 10px 10px;
+  }
+
+  .car-loan > a > img,
+  .home-loan > a > img {
+    height: 15.65px;
+    width: 15.65px;
+    margin-right: 5px;
+  }
+
+  .car-loan > a > span,
+  .home-loan > a > span {
+    font-size: 10px;
+  }
+
+  /* customer experience section */
+
+  .title2 {
+    font-size: 20px;
+  }
+
+  .customer-heading > p {
+    max-width: 300px;
+  }
+
+  .card-row > .col-3 {
+    width: 42%;
+  }
+
+  .card {
+    max-width: 160px;
+  }
+
+  .card-img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .card-desc > h4 {
+    margin-top: 30px;
+  }
+
+  .card-desc > p {
+    font-size: 9px;
+  }
+
+  /* Service section */
+
+  .col-3 {
+    width: 100%;
+  }
+
+  .title3 {
+    font-size: 30px !important;
+  }
+
+  .service-hdr > p {
+    max-width: 350px;
+  }
+
+  /* Result section */
+
+  .title4 {
+    font-size: 25px;
+  }
+
+  .result-hdr > p {
+    max-width: 500.6px;
+    margin: 20px auto 45px;
+    font-size: 12px;
+  }
+
+  .result-row .col-3 {
+    width: 50%;
+  }
+
+  .folio-card {
+    width: 152px;
+  }
+
+  .title5 {
+    font-size: 24px !important;
+  }
+
+  .folio-card > p {
+    font-size: 11px;
+  }
+
+  /* Footer section */
+
+  .footer-row {
+    margin-left: 0 !important;
+  }
+
+  .footer-row .col-20 {
+    width: 100%;
+  }
+
+  .footer-links {
+    text-align: center !important;
+  }
+
+  .footer-links p {
+    margin: 16px auto !important;
+  }
+
+  .phone {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icon-list {
+    justify-content: center;
+  }
+
+  .social-icon-list > li > a {
+    margin: 0 4px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* Navbar Section */
+  .nav-logo > a {
+    width: 120px;
+  }
+
+  /* Loan Section */
+
+  .title1 {
+    font-size: 36px !important;
+  }
+
+  .car-loan {
+    left: -25px;
+    padding: 5px 5px;
+  }
+
+  .home-loan {
+    top: 43px;
+    padding: 5px 5px;
+    right: 88px;
+  }
+
+  .secondary-btn,
+  .calculator-btn {
+    padding: 10px 10px;
+  }
+
+  /* Footer section */
+
+  .footer-row {
+    margin: 0 auto;
+  }
+}
