@@ -552,13 +552,15 @@ Result Section
   color: var(--quaternary-color);
 }
 
-.folio-card {
+.result-content {
   max-width: 172px;
   margin: 0 auto 55px;
 }
 
-.folio-card:hover {
+.result-content:hover {
   cursor: pointer;
+  transform:scale(1.2);
+  transition: 0.8s all linear;
 }
 
 .title5 {
@@ -567,14 +569,11 @@ Result Section
   margin-bottom: 8px;
 }
 
-.folio-card > p {
+.result-content> p {
   color: var(--secondary-color);
   font-size: 16px;
 }
-.folio-card:hover{
-  transform:scale(1.2);
-  transition: 0.8s all linear;
-}
+
 .title5:hover{
   color: #f152a7;
 }
@@ -1089,7 +1088,7 @@ Footer Section
     width: 50%;
   }
 
-  .folio-card {
+  .result-content {
     width: 152px;
   }
 
@@ -1097,8 +1096,8 @@ Footer Section
     font-size: 24px !important;
   }
 
-  .folio-card > p {
-    font-size: 11px;
+  .result-content > p {
+    font-size: 10px;
   }
 
   /* Footer section */
